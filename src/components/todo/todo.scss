@@ -1,0 +1,46 @@
+.todoContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+    span.completed {
+        font-size: 20px;
+        text-decoration: line-through;
+        font-style: italic;
+    }
+    span.complete {
+        font-size: 20px;
+    }
+    div {
+        input {
+            padding: 5px;
+        }
+        button {
+            margin-left: var(--mb-0-5);
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid var(--button-bg-color);
+            transition: all 0.3s ease;
+            &:hover {
+                color: #fff;
+                background: var(--button-bg-color);
+                transition: all 0.3s ease;
+            }
+        }
+        button.completed {
+            margin-left: var(--mb-0-5);
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid var(--button-bg-color);
+            background: var(--button-bg-color);
+            color: #fff;
+        }
+        button.delete {
+            border: 1px solid var(--button-bg-color-danger);
+            &:hover {
+                color: #fff;
+                background: var(--button-bg-color-danger);
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

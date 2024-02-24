@@ -1,0 +1,31 @@
+.todoInputWrapper {
+    display: flex;
+    margin-bottom: var(--mb-3);
+    justify-content: space-between;
+    width: 100%;
+    .inputWrapper {
+        height: 45px;
+        border: 1px solid var(--button-bg-color);
+        border-radius: 5px;
+        input {
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            height: 43px;
+            padding: 0 var(--mb-1);
+        }
+    }
+    .btn {
+        border: 1px solid var(--button-bg-color);
+        height: 45px;
+        padding: 0 var(--mb-1);
+        background-color: var(--header-bg-color);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        &:hover {
+            color: #fff;
+            background: var(--button-bg-color);
+            transition: all 0.3s ease;
+        }
+    }
+}
